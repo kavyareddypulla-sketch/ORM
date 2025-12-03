@@ -50,9 +50,14 @@ class Employee (models.Model):
 class EmployeeAdmin(admin.ModelAdmin):
     list_display=["eid","name","salary","age","email"]
 ```
+admin.py
+```
+from django.contrib import admin 
+from .models import Employee,EmployeeAdmin
+admin.site.register(Employee,EmployeeAdmin)
+```
 ## OUTPUT
-
-
+![alt text](<Screenshot 2025-12-03 235114.png>)
 
 ## RESULT
 Thus the program for creating E-commerce website database using ORM hass been executed successfully
